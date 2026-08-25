@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/*
+// Without typedef
+enum Day {MON, TUE, WED, THU, FRI, SAT, SUN};
+enum Day today = WED;
+
+//With typedef
+typedef enum {MON, TUE, WED, THU, FRI, SAT, SUN }Day;
+Day today = WED;
+*/
+// ========
+
+typedef enum {MON, TUE, WED, THU, FRI, SAT, SUN} Day;
+
+int main(){
+    Day today = MON;
+    if(today == WED){
+        printf("It is Wednesday!\n");
+    }else{
+        printf("HAZAKABOOZBERRY!");
+    }
+    return 0;
+}
+
