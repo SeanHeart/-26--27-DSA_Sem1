@@ -35,3 +35,5 @@ AngelV1V2 insert(AngelV1V2 A, int pos, Angel toInsert){
     }
     return A;
 }
+
+//tarongon pa ko nii [Sept 1, 2026]
