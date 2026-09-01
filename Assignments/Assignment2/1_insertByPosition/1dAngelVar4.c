@@ -19,7 +19,7 @@ typedef struct{
 
 AngelV3V4 B;
 
-void insertV4(AngelV3V4 *Bptr, int pos, Angel toInsert){
+void insert(AngelV3V4 *Bptr, int pos, Angel toInsert){
     if(pos <= 0 || pos > Bptr->lastNdx+1 || Bptr->lastNdx >= MAX-1){
         printf("Error: Invalid Position! || Array is full!");
     }else{
@@ -30,6 +30,4 @@ void insertV4(AngelV3V4 *Bptr, int pos, Angel toInsert){
         Bptr->angels[truePos] = toInsert;
         Bptr->lastNdx++;
     }
-
-    return B;
 }

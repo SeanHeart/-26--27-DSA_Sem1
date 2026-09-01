@@ -20,7 +20,7 @@ typedef struct{
 AngelV1V2 A;
 
 
-void deleteV2(AngelV1V2 *Aptr, int pos){
+void delete(AngelV1V2 *Aptr, int pos){
     if(pos <=0 || pos > Aptr->lastNdx+1){
         printf("Error: Invalid position!");
     }else{
