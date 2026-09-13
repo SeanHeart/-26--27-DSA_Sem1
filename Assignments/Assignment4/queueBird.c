@@ -4,10 +4,12 @@
 
 #define MAX_BIRDS 10
 
+typedef char* String;   // lets us write "String name;" like in the assignment
+
 typedef struct {
-    char name[50];
-    char specie[50];
-    char color[50];
+    String name;
+    String specie;
+    String color;
     int bread;
     int age;
 } Bird;
@@ -101,5 +103,3 @@ int main(void) {
 
     return 0;
 }
-
-//from claudeAI
