@@ -1,0 +1,1 @@
+*branchA &= ~toMove;
